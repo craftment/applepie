@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>키 입력 감지</title>
+    <title>Instagram 로그인</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>키 입력 테스트</h2>
-    <input type="text" id="inputBox" placeholder="여기에 입력하세요">
-
-    <script src="script.js"></script>
+    <div class="login-container">
+        <img src="instagram-logo.png" alt="Instagram Logo" class="logo">
+        <form>
+            <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" required>
+            <input type="password" placeholder="비밀번호" required>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="divider">또는</div>
+        <button class="fb-login">Facebook으로 로그인</button>
+        <a href="#" class="forgot-password">비밀번호를 잊으셨나요?</a>
+    </div>
 </body>
 </html>
